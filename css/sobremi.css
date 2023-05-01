@@ -1,0 +1,103 @@
+
+
+#sobremi{
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: var(--titulo);
+    display: flex;
+}
+
+#sobremi .contenedor-foto{
+    max-width: 400px;
+    margin-right: 80px;
+}
+
+#sobremi .contenedor-foto img{
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: var(--fondoimg);
+}
+
+#sobremi .sobremi{
+    margin: 0 40px;
+}
+
+#sobremi .sobremi .titulo-seccion{
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--titulo);
+    text-decoration: underline;
+    text-decoration-color: var(--tituloseccion);
+    text-decoration-thickness: 5px;
+}
+
+#sobremi .sobremi h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+#sobremi .sobremi h2 span{
+    color: var(--ligth-blue);
+}
+
+#sobremi .sobremi h3{
+    font-size: 18px;
+    font-weight: 500px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#sobremi .sobremi p{
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--titulo);
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+#sobremi .sobremi a{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: 2px solid var(--black);
+    border-radius: 30px;
+    color: var(--black);
+    font-weight: bold;
+    transition: .5s;
+}
+
+#sobremi .sobremi a:hover{
+    background-color: var(--ligth-blue);
+    color: var(--white);
+}
+
+
+/*------------ SECCIÓN RESPONSIVE------------*/
+
+@media screen and (max-width:800px){
+    #sobremi{
+        padding: 50px;
+        display: block;
+    }
+    #sobremi .contenedor-foto{
+        max-width: 250px;
+        margin: auto;
+    }
+    #sobremi .contenedor-foto img{
+        padding: 8px;
+    }
+    #sobremi .sobremi .titulo-seccion{
+        text-align: center;
+    }
+    #sobremi .sobremi h2{
+        font-size: 25px;
+        text-align: center;
+    }
+}

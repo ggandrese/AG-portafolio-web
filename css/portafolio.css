@@ -1,0 +1,76 @@
+
+#portafolio{
+    max-width: 1100px;
+    min-height: 100vh;
+    padding: 100px 0;
+    margin: auto;
+}
+
+#portafolio .titulo-seccion{
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--titulo);
+    text-decoration: underline;
+    text-decoration-color: var(--tituloseccion);
+    text-decoration-thickness: 5px;
+}
+
+#portafolio .fila{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 60px;
+}
+
+#portafolio .fila .proyecto{
+    max-width: 300px;
+    border: 1px solid var(--black);
+    margin: 20px 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#portafolio .fila .proyecto img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: .5s;
+}
+
+#portafolio .fila .proyecto:hover img{
+    filter: grayscale(0);
+}
+
+#portafolio .fila .proyecto .info{
+    position: absolute;
+    left: 0;
+    background-color: var(--banner);
+    color: var(--ligth-blue);
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+
+#portafolio .fila .proyecto:hover .info{
+    opacity: 1;
+    bottom: 0;
+}
+
+
+/*------------ SECCIÓN RESPONSIVE------------*/
+
+@media screen and (max-width:800px){
+    #portafolio{
+        padding: 50px 15px; 
+    }
+    #portafolio .fila{
+        display: block;
+    }
+    #portafolio .fila .proyecto{
+        margin: 10px auto;
+    }
+}

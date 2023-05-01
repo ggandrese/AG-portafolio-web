@@ -1,0 +1,151 @@
+#inicio{
+    background: linear-gradient(var(--banner), var(--banner)), url("../img/logo-banner.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#inicio .contenido header{
+    background-color: var(--header);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+#inicio .contenido header .contenido-header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#inicio .contenido header .contenido-header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+#inicio .contenido header .contenido-header nav ul li a{
+    text-decoration: none;
+    color: var(--white);
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+#inicio .contenido header .contenido-header nav ul a:hover{
+    color: var(--ligth-blue);
+}
+
+#inicio .contenido header .contenido-header .redes a{
+    text-decoration: none;
+    color: var(--white);
+    display: inline-block;
+    margin-left: 9px;
+    transition: .5s;
+    font-size: 25px;
+}
+
+#inicio .contenido header .contenido-header .redes a:hover{
+    color: var(--ligth-blue);
+}
+
+#inicio .contenido header .contenido-header .seleccionado{
+    color: var(--ligth-blue);
+}
+
+#inicio .contenido .presentacion{
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio .contenido .presentacion .bienvenida{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#inicio .contenido .presentacion h2{
+    font-size: 52px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion h2 span{
+    font-size: 42px;
+    color: var(--ligth-blue);
+}
+
+#inicio .contenido .presentacion .descripcion{
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 22px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid var(--white);
+    border-radius: 50px;
+    color: var(--white);
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+#inicio .contenido .presentacion a:hover{
+    background-color: var(--ligth-blue);
+}
+
+#icono-nav{
+    color: var(--white);
+    display: none;
+}
+
+
+/*------------ SECCIÓN RESPONSIVE------------*/
+
+@media screen and (max-width:800px){
+    .redes{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    nav.responsive{
+        display: block;
+        background-color: var(--banner);
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0;        
+    }
+    nav.responsive ul{
+        display: block !important;
+        text-align: center;
+    }
+    nav.responsive ul li{
+        margin: 5px 0;    
+    }
+    #icono-nav{
+        display: block;
+    }
+    #inicio .contenido .presentacion h2{
+        font-size: 40px;
+    }
+}

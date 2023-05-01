@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/sobremi.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/portafolio.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/whatsapp-btn">
+    <title>/AG/ Desarrollo Web</title>
+</head>
+<body>
+
+<!------------//////// SECCIÓN INICIO ////////------------>
+<section id="inicio">    
+    <div class="contenido">        
+        <header>     
+            <div class="contenido-header">
+                <img class="ag-img" src="img/AG.png" alt="/AG/"><a href="index.html"></a></h1>
+                <nav id="nav" class="">
+                    <ul id="links">
+                        <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">Inicio</a></li>
+                        <li><a href="#sobremi" onclick="seleccionar(this)">Sobre Mí</a></li>
+                        <li><a href="#skills" onclick="seleccionar(this)">Skills</a></li>
+                        <li><a href="#portafolio" onclick="seleccionar(this)">Portafolio</a></li>
+                        <li><a href="#contacto" onclick="seleccionar(this)">Contacto</a></li>
+                    </ul>            
+                </nav>
+
+<!------------ICONO MENÚ RESPONSIVE------------>
+
+                <div id="icono-nav" onclick="responsiveMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+<!------------ICONOS REDES SOCIALES------------>
+
+                <div class="redes">
+                    <a href="https://www.linkedin.com/in/agranada" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/ggandrese" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/ggandrese/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </header> 
+
+ <!------------PRESENTACIÓN------------>
+
+        <div class="presentacion">
+            <p class="bienvenida">Bienvenidos</p>
+            <h2>Soy <span>Andres Granada</span>, Desarrollador Web</h2>
+            <p class="descripcion">Apasionado por la tecnología y el Desarrollo Frontend</p>
+            <a href="#portafolio">Ir a Portafolio</a>
+        </div>
+    </div>
+</section>
+
+<!------------///// BOTÓN DE WHATSAPP /////-----------
+<div class="contenedor-wsp">
+    <a href="https://wa.me/+573143159998?text=Deseo%20Contactarme%20Contigo"">
+    <img src="img/wsp.png" alt="whatsapp-btn" class="boton">
+    </a>
+</div>
+-->
+
+<!------------//////// SECCIÓN SOBRE MÍ ////////------------>
+<div class="bg-section bg-section-sobremi">
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/sobre-mi.jpg" alt="foto">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mí</p>
+            <h2>Hola, soy <span>Andres Granada</span></h2>
+            <h3>Desarrollador Web</h3>
+            <p>Comencé mi trayectoria profesional desempeñando distintos roles en áreas administrativas; Actualmente estudio y desarrollo pequeños proyectos en el área de desarrollo web.</p>
+            <p>Soy una persona curiosa, aprender hace parte de mi vida diaria, me gusta resolver problemas y trabajar en equipo.</p>
+            <p>Busco oportunidades para hacer prácticas e impulsar mi carrera en áreas de tecnologías de la información donde pueda afianzar mis conocimientos técnicos y crecer junto a la empresa y mis compañeros de trabajo.</p>
+            <a href="docs/cv-andres-granada.pdf" download="CvAndresGranada">Descargar CV</a>
+        </div>
+    </section>
+</div>
+
+<!------------//////// SECCIÓN SKILLS ////////------------>
+<div class="bg-section bg-section-skills">
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="slider" >
+            <span style="--i:1;"><img src="img/html.png" alt=""></span>
+            <span style="--i:2;"><img src="img/css.png" alt=""></span>
+            <span style="--i:3;"><img src="img/sass.png" alt=""></span>
+            <span style="--i:4;"><img src="img/javascript.png" alt=""></span>
+            <span style="--i:5;"><img src="img/react.png" alt=""></span>
+            <span style="--i:6;"><img src="img/python.png" alt=""></span>
+            <span style="--i:7;"><img src="img/sql.png" alt=""></span>
+            <span style="--i:8;"><img src="img/git.png" alt=""></span>          
+        </div>
+    </section>
+</div>
+
+<!------------//////// SECCIÓN PORTAFOLIO ////////------------>
+<section id="portafolio">
+    <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+    <div class="fila">
+        <div class="proyecto">
+            <div class="overlay">
+                <img src="img/proyecto_1.jpg" alt="encriptador-textos">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Encriptador de Textos</p>
+                </div>
+            </div>
+        </div>
+        <div class="proyecto">
+            <div class="overlay">
+                <img src="img/proyecto_2.jpg" alt="preguntas-frecuentes">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Sección Preguntas Frecuentes</p>
+                </div>
+            </div>
+        </div>
+        <div class="proyecto">
+            <div class="overlay">
+                <img src="img/proyecto_3.jpg" alt="barbershop">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Barber Shop</p>
+                </div>
+            </div>
+        </div>
+        <div class="proyecto">
+            <div class="overlay">
+                <img src="img/proyecto_4.jpg" alt="frontend-store">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Frontend Store</p>
+                </div>
+            </div>
+        </div>
+        <div class="proyecto">
+            <div class="overlay">
+                <img src="img/futuro-proyecto.jpg" alt="to-do-list">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Futuro Proyecto</p>
+                </div>
+            </div>
+        </div>
+        <div class="proyecto">
+            <div class="overlay">
+                <img src="img/futuro-proyecto.jpg" alt="#">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Futuro Proyecto</p>
+                </div>
+            </div>
+        </div>
+        <div class="proyecto">
+            <div class="overlay">
+                <img src="img/futuro-proyecto.jpg" alt="#">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Futuro Proyecto</p>
+                </div>
+            </div>
+        </div>
+        <div class="proyecto">
+            <div class="overlay">
+                <img src="img/futuro-proyecto.jpg" alt="#">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Futuro Proyecto</p>
+                </div>
+            </div>
+        </div>
+        <div class="proyecto">
+            <div class="overlay">
+                <img src="img/futuro-proyecto.jpg" alt="#">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Futuro Proyecto</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!------------//////// SECCIÓN CONTACTO ////////------------>
+<section id="contacto">
+    <form action="https://formsubmit.co/b733d0f9d579d23a9d7088e2fb736c52" method="POST" />
+    <h3 class="titulo-seccion">Contáctame ahora</h3>
+    <div class="contenedor-form">
+        <form action="">
+            <div class="fila mitad">
+                <input type="text" name="name" placeholder="Nombre Completo" class="input-mitad">
+                <input type="text" name="email" placeholder="Dirección de Email" class="input-mitad">
+            </div>
+            <div class="fila">
+                <input type="text" name="subject" placeholder="Asunto" class="input-full">
+            </div>
+            <div class="fila">
+                <textarea name="comments" id="" cols="30" rows="10" placeholder="Deja tu Mensaje..." class="input-full"></textarea>
+            </div>
+            <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+        </form>
+    </div>
+</section>
+
+<!------------//////// SECCIÓN FOOTER ////////------------>
+<footer>
+    <p>Todos los derechos reservados - 2023</p>
+    <div class="redes">
+        <a href="https://www.linkedin.com/in/agranada" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/ggandrese" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/ggandrese/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

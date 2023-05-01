@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --white: #FFFFFF;
+    --ligth-blue: #00C4CC;
+    --black: #000000;
+    --banner: rgba(0,0,0,.7);
+    --header: rgba(0,0,0,.6);
+    --footer: rgba(0,0,0,.8);
+    --titulo: #111135;
+    --fondoimg: #F3F3F3;
+    --tituloseccion: #D3D3D3;
+    --bordercontacto: #919191;
+}
+
+.bg-section{
+    width: 100%;
+    margin: auto;
+}

@@ -1,0 +1,18 @@
+footer{
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--white);
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
+}
+
+footer a:hover{
+    color: var(--ligth-blue);
+}
