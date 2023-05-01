@@ -87,7 +87,7 @@
         display: block;
     }
     #sobremi .contenedor-foto{
-        max-width: 250px;
+        max-width: 270px;
         margin: auto;
     }
     #sobremi .contenedor-foto img{
@@ -100,4 +100,8 @@
         font-size: 25px;
         text-align: center;
     }
+    #sobremi .sobremi p{
+        text-align: left;
+    }
 }
+
