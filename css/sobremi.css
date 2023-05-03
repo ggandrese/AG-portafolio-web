@@ -83,11 +83,11 @@
 
 @media screen and (max-width:800px){
     #sobremi{
-        padding: 50px;
+        padding: 100px 10px;
         display: block;
     }
     #sobremi .contenedor-foto{
-        max-width: 270px;
+        width: 80%;
         margin: auto;
     }
     #sobremi .contenedor-foto img{
@@ -101,7 +101,8 @@
         text-align: center;
     }
     #sobremi .sobremi p{
-        text-align: left;
+        font-size: 13px;
+        text-align: justify;
     }
 }
 

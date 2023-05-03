@@ -65,7 +65,8 @@
 
 @media screen and (max-width:800px){
     #portafolio{
-        padding: 50px 15px; 
+        width: 100%;
+        padding: 100px 0;
     }
     #portafolio .fila{
         display: block;
